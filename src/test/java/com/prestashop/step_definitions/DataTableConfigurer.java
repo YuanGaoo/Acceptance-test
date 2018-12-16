@@ -30,6 +30,7 @@ public class DataTableConfigurer implements TypeRegistryConfigurer {
 					@Override
 					public User transform(Map<String, String> row) throws Throwable {
 						// these keys must match the data table in the feature file
+						System.out.println("practices");
 						String firstName = row.get("First Name");
 						String lastName = row.get("Last Name");
 						String company = row.get("Company");
@@ -43,6 +44,7 @@ public class DataTableConfigurer implements TypeRegistryConfigurer {
 						return new User(firstName, lastName, email, phone, company, address, city, password, zipcode,
 								state);
 					}
+				
 				}));
 
 //		typeRegistry.defineDataTableType(new DataTableType(
