@@ -65,9 +65,6 @@ public class ExcelUtil {
 	}
 
 	public List<Map<String, String>> getDataList() {
-		// get all columns
-		List<String> columns = getColumnsNames();
-		// will be returned
 		List<Map<String, String>> data = new ArrayList<>();
 		
 		for (int i = 1; i < rowCount(); i++) {
