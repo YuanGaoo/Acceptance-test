@@ -22,7 +22,7 @@ public class Driver {
 				driver = new FirefoxDriver();
 				break;
 			case "chrome":
-				WebDriverManager.chromedriver().setup();
+				WebDriverManager.chromedriver().version("84.0.4147.30").setup();
 				driver = new ChromeDriver();
 				break;
 			case "ie":
